@@ -12,4 +12,5 @@ jobs:
         - uses: aws-actions/setup-sam@v2
           with:
             use-installer: true
+        - run: docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
         - run: sam build -u
