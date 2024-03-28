@@ -28,7 +28,6 @@ def lambda_handler(event, context):
         Return doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
     """
 
-    print(x509.load_pem_x509_certificates(b"TEST_PEM"))
     print(Binding.ffi)
 
     # try:
