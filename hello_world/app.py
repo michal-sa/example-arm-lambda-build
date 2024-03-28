@@ -3,6 +3,7 @@ import json
 # import requests
 
 from cryptography import x509
+from cryptography.hazmat.bindings.openssl.binding import Binding
 
 
 def lambda_handler(event, context):
@@ -28,6 +29,7 @@ def lambda_handler(event, context):
     """
 
     print(x509.load_pem_x509_certificates(b"TEST_PEM"))
+    print(Binding.ffi)
 
     # try:
     #     ip = requests.get("http://checkip.amazonaws.com/")
