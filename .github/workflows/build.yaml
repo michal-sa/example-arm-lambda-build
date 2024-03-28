@@ -15,7 +15,7 @@ jobs:
 
         - run: sam build -u
 
-        - run: sam deploy
+        - run: sam deploy --resolve-s3
           env:
               AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
               AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
