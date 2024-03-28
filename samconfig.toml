@@ -1,0 +1,6 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "HelloWorld"
+capabilities = "CAPABILITY_NAMED_IAM"
+region = "us-east-1"
