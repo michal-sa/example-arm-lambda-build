@@ -2,8 +2,7 @@ import json
 
 # import requests
 
-from cryptography import x509
-from cryptography.hazmat.bindings.openssl.binding import Binding
+from cryptography.hazmat.primitives import hashes, padding
 
 
 def lambda_handler(event, context):
@@ -27,8 +26,6 @@ def lambda_handler(event, context):
 
         Return doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
     """
-
-    print(Binding().ffi)
 
     # try:
     #     ip = requests.get("http://checkip.amazonaws.com/")
